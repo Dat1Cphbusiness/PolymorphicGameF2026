@@ -32,4 +32,3 @@ public class Zombie implements Creature {
         return "\uD83E\uDDDF\u200D♂\uFE0F\u001B[32mThrough the trees a vengeful zombie appears - ready to eat your brain \u001B[0m\uD83E\uDDDF\u200D♂\uFE0F";
     }
 }
-
