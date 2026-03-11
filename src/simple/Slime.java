@@ -15,7 +15,7 @@ public class Slime implements Creature{
         Random r = new Random();
         if (r.nextInt() % 4 == 0 || r.nextInt()==99) {
             isRaining = true;
-        } //slim bliver styrket af regnvejr
+        } //slim bliver styrket af regnvejr, og tager mindre damage.
 
 
     }
@@ -33,11 +33,10 @@ public class Slime implements Creature{
 
     @Override
     public void takeDamage(int damage) {
-        if (isRaining)
-             health-=(damage-2);
-         else
-             health-=(damage+2);
-
+        if (isRaining) {
+            System.out.println(name+" takes damage, but soaks up the rain and feels more alive than ever");
+            health+=damage;
+        } else health-=(damage+2);
     }
 
     @Override

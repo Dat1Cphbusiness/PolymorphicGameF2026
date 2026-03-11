@@ -17,7 +17,7 @@ public class GamePlay {
         this.player = new Player(input);
         while (!input.equals("n") && player.getHealth() > 0) {
             System.out.print("You are walking and ");
-            Creature creature = creatureGenerator.getRandomCreature(); //forstår ikke troede ikke man kunne gøre sådan med et interface?
+            Creature creature = creatureGenerator.getRandomCreature();
             System.out.println(creature.meet());
             while (creature.getHealth() > 0 && player.getHealth() > 0) {
                 System.out.println("Will you fight " + creature.getName() + " y/n?");
