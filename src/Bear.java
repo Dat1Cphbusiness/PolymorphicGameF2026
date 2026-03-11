@@ -3,7 +3,7 @@ import simple.Creature;
 import java.util.Random;
 
 public class Bear implements Creature {
-    private String name;
+    private String name;//
     private int health;
     private boolean isBig;
 
