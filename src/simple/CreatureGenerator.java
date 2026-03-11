@@ -17,7 +17,7 @@ public class CreatureGenerator {
         creatures.add(new Dragon("Puff"));
         creatures.add(new Spider("Peter"));
         creatures.add(new Dragon("Smaug"));
-        creatures.add(new Wolf("Wolf1"));
+        creatures.add(new Wolf("Wolf2"));
     }
 
     public Creature getRandomCreature() {
