@@ -20,7 +20,6 @@ public class Spider implements Creature {
 
     @Override
     public int attack() {
-
         if (isNight)
             return 5;
         else

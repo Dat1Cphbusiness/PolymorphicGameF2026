@@ -24,7 +24,7 @@ public class Dragon implements Creature {
     }
 
     public String getName() {
-       return this.name;
+        return this.name;
     }
 
     @Override
