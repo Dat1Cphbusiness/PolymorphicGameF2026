@@ -16,7 +16,7 @@ package simple;
 
         @Override
         public String meet() {
-            return "You encounter a poisonous scorpion raising its tail to strike!";
+            return "\uD83E\uDD82 \u001B[31m You encounter a poisonous scorpion raising its tail to strike!\u001B[0m";
         }
 
         @Override
@@ -35,7 +35,7 @@ package simple;
         }
 
         public int poisonAttack(){
-            System.out.println("Poison spreads though your veins!");
+            System.out.println("\u001B Poison spreads though your veins! \u001B[0m");
             return 15;
         }
     }
