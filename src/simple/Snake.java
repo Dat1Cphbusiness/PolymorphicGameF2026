@@ -1,18 +1,18 @@
 package simple;
 
-public class Dragon implements Creature {
+public class Snake implements Creature {
 
     int health;
     String name;
 
-    public Dragon(String name) {
-        this.health = 10;
+    public Snake(String name) {
+        this.health = 15;
         this.name = name;
     }
 
     @Override
     public int attack() {
-        return 7;
+        return 8;
     }
 
     public void takeDamage(int damage) {
@@ -29,6 +29,6 @@ public class Dragon implements Creature {
 
     @Override
     public String meet() {
-        return "from the sky a metallic green dragon comes thundering";
+        return "from nowhere... the snake comes quietly from the ground pssssss";
     }
 }

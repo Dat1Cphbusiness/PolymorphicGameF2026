@@ -13,10 +13,11 @@ public class CreatureGenerator {
     }
 
     public void generateCreatures() {
-        creatures.add(new Spider("Shelob"));
-        creatures.add(new Dragon("Puff"));
-        creatures.add(new Spider("Peter"));
-        creatures.add(new Dragon("Smaug"));
+        creatures.add(new Bat("Kik"));
+        creatures.add(new Snake("PoPo"));
+        creatures.add(new Bat("Bob"));
+        creatures.add(new Snake("Smukki"));
+        creatures.add(new Spider("Haji"));
     }
 
     public Creature getRandomCreature() {

@@ -8,7 +8,7 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
-        this.health = 50;
+        this.health = 30;
 
     }
 
