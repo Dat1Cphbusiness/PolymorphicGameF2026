@@ -2,28 +2,36 @@ package simple;
 
 public class Wolf implements Creature {
 
+    int health;
+    String name;
+
+    public Wolf(String name) {
+        this.name = name;
+        this.health = 50;
+    }
+
     @Override
     public int attack() {
-        return 1;
+        return 20;
     }
 
     @Override
     public String meet() {
-        return "";
+        return "legendary wolf";
     }
 
     @Override
     public void takeDamage(int damage) {
-
+        health -= damage;
     }
 
     @Override
     public int getHealth() {
-        return 0;
+        return health;
     }
 
     @Override
     public String getName() {
-        return "";
+        return this.name;
     }
 }
