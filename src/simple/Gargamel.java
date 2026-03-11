@@ -5,7 +5,7 @@ public class Gargamel implements Creature {
     private int health;
 
     public Gargamel(String name, int health){
-        this.name = "Gargamel";
+        this.name = name;
         this.health = 100;
     }
 
