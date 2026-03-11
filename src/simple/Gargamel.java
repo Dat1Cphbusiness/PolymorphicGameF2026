@@ -47,4 +47,5 @@ public class Gargamel implements Creature {
 
 }
 
+// færdig
 
