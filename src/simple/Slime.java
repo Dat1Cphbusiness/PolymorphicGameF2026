@@ -8,7 +8,7 @@ public class Slime implements Creature{
     int health;
     boolean isRaining;
 
-    Slime(String name, int health){
+    Slime(String name){
         this.name=name;
         this.health=10;
 
