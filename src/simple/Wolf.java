@@ -4,7 +4,7 @@ public class Wolf implements Creature {
 
     @Override
     public int attack() {
-        return 0;
+        return 1;
     }
 
     @Override
