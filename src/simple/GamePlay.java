@@ -26,8 +26,8 @@ public class GamePlay {
                     break;
                 fight(creature);
                 if (creature.getHealth() <= 0) {
-                    System.out.println(creature.getName() + " is dead. " + player.getName() + " gets 2 healthpoints");
-                    player.changeHealth(2);
+                    System.out.println(creature.getName() + " is dead. " + player.getName() + " gets 5 healthpoints");
+                    player.changeHealth(5);
                 }
                 System.out.println(player.getName() + " has " + player.getHealth() + " healthpoints");
                 System.out.println(creature.getName() + " has " + creature.getHealth() + " healthpoints");
@@ -58,7 +58,7 @@ public class GamePlay {
             System.out.println(player.getName() + " is damaged by " + creatureAttack + " points");
             player.changeHealth(-creatureAttack);
         } else
-            System.out.println("It is a tie! Nobody is damaged");
+            System.out.println("It is a tie! Nobody is damaged :/");
 
     }
 
