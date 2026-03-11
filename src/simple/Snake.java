@@ -15,9 +15,8 @@ public class Snake implements Creature {
         return 8;
     }
 
-    public int takeDamage(int damage) {
+    public void takeDamage(int damage) {
         health -= damage;
-        return damage;
     }
 
     public int getHealth() {

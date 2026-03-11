@@ -28,8 +28,8 @@ public class Gargamel implements Creature {
     }
 
    @Override
-   public int takeDamage(int damage){
-        return health -= damage;
+   public void takeDamage(int damage){
+        health -= damage;
    }
 
    @Override

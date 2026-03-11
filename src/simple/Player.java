@@ -5,10 +5,9 @@ public class Player {
     int health;
 
 
-
     public Player(String name) {
         this.name = name;
-        this.health = 30;
+        this.health = 200;
 
     }
 

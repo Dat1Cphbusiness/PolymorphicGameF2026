@@ -1,4 +1,4 @@
-import simple.Creature;
+package simple;
 
 import java.util.Random;
 
@@ -9,7 +9,7 @@ public class Bear implements Creature {
 
 public Bear(String name) {
     this.name = name;
-    this.health = health;
+    this.health = 40;
     Random r = new Random();
     if (r.nextInt() % 2 == 0) {
         isBig = true;
@@ -43,7 +43,7 @@ public Bear(String name) {
 
     public String meet(){
     if (isBig) {
-        return "a giant Bear is emerging";
+        return "a giant simple.Bear is emerging";
     } else {
         return "a small bear is emerging";
     }

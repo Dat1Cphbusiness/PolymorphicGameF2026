@@ -21,8 +21,10 @@ public class FireMaster implements Creature {
         return 9;
     }
 
+    @Override
     public void takeDamage(int damage){
         health-=damage;
+
     }
     @Override
     public String meet() {

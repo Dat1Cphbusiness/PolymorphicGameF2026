@@ -12,7 +12,7 @@ public interface Creature {
     public String meet();
 
     // receive damage and do something (for instance decrease health)
-    public int takeDamage(int damage);
+    public void takeDamage(int damage);
 
     // return a number between 0 and 10
     // when health is 0, the creature dies

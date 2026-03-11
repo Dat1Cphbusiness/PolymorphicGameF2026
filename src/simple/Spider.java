@@ -30,12 +30,12 @@ public class Spider implements Creature {
         return name;
     }
 
-    public int takeDamage(int damage) {
+    public void takeDamage(int damage) {
         if (isNight)
             health -= damage;
         else
             health -= (damage + 1);
-        return damage;
+
     }
 
     public int getHealth() {

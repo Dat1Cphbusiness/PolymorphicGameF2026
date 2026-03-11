@@ -13,16 +13,24 @@ public class CreatureGenerator {
     }
 
     public void generateCreatures() {
-        creatures.add(new Spider("Shelob"));
-        creatures.add(new Dragon("Puff"));
-        creatures.add(new Spider("Peter"));
-        creatures.add(new Dragon("Smaug"));
-        creatures.add(new Giant("Ymir"));
+
+      /*  creatures.add(new Giant("Ymir"));
+        creatures.add(new Djinn("Djinnie"));
+        creatures.add(new FireMaster("Fireman", 100));
+        creatures.add(new Gargamel("Gargamel", 100));
+        creatures.add(new Golem("Big John"));
+        creatures.add(new Scorpion("Black Scorpion", 100));
+        creatures.add(new Slime("Slop Bob"));
+        creatures.add(new Snake("Jackie"));
+        creatures.add(new Wolf("Night Wolf"));
+        creatures.add(new Bat("Batman"));
+        creatures.add(new Zombie("Jens"));*/
+        creatures.add(new Bear("Bear Guy"));
     }
 
     public Creature getRandomCreature() {
         Random r = new Random();
         int i = r.nextInt(creatures.size());
-        return creatures.get(i);
+        return creatures.remove(i);
     }
 }

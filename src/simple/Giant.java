@@ -29,8 +29,10 @@ public class Giant implements Creature{
         return "from behind the mountain a shadow emerges, the giant steps forward";
     }
 
+    @Override
     public void takeDamage(int damage){
         health -= damage;
+
     }
 
     public int getHealth(){
