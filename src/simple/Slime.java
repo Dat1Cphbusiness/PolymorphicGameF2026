@@ -35,7 +35,7 @@ public class Slime implements Creature{
     public void takeDamage(int damage) {
         if (isRaining) {
             System.out.println(name+" takes damage, but soaks up the rain and feels more alive than ever");
-            health+=damage;
+            health-=damage-2;
         } else health-=(damage+2);
     }
 
