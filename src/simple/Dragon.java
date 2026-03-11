@@ -15,8 +15,9 @@ public class Dragon implements Creature {
         return 7;
     }
 
-    public void takeDamage(int damage) {
+    public int takeDamage(int damage) {
         health -= damage;
+        return damage;
     }
 
     public int getHealth() {
