@@ -12,7 +12,7 @@ public class CreatureGenerator {
         generateCreatures();
     }
 
-    public void generateCreatures() {
+    private void generateCreatures() {
         creatures.add(new Spider("Shelob"));
         creatures.add(new Dragon("Puff"));
         creatures.add(new Spider("Peter"));
@@ -22,6 +22,6 @@ public class CreatureGenerator {
     public Creature getRandomCreature() {
         Random r = new Random();
         int i = r.nextInt(creatures.size());
-        return creatures.get(i);
+        return creatures.remove(i);
     }
 }

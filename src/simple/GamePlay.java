@@ -9,7 +9,7 @@ public class GamePlay {
     private CreatureGenerator creatureGenerator = new CreatureGenerator();
 
     public void startGame() {
-        creatureGenerator.generateCreatures();
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Adventure begins!");
         System.out.println("What is your name?");

@@ -1,0 +1,57 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Player{
+    - String name
+    - int health
+    + Player(String name)
+    + void changeHealth(int changeBy)
+    + String getName()
+    + int getHealth()
+}
+
+interface Creature{
+    + int attack()
+    + String meet()
+    + takeDamage(int damage)
+    + getHealth()
+    + getName()
+}
+
+class Spider{
+    - String name
+    - int health
+    - isNight
+}
+
+class Dragon{
+    - String name
+    - int health
+}
+
+class GamePlay{
+    - Player player
+    - CreatureGenerator
+    + void startGame()
+    - void fight(Creature creature)
+}
+
+class CreatureGenerator{
+    - ArrayList<Creature> creatures
+    + CreatureGenerator()
+    + void generateCreatures()
+    + Creature getRandomCreature()
+}
+
+class Main{}
+
+Main *-- GamePlay
+GamePlay *-- Player
+GamePlay *-- CreatureGenerator
+CreatureGenerator *-- Creature
+Creature <|.. Spider
+Creature <|.. Dragon
+
+
+
+@enduml
